@@ -37,6 +37,10 @@ h2 {
   font-family: Arial;
 }
 
+.headline h2 {
+  font-size: 50px;
+}
+
 .landing-img, .card-container .card3 img, .card-container .card2 img, .card-container .card1 img {
   width: 100px;
   height: 100px;
