@@ -11,6 +11,9 @@ body {
   background-color: $mainColor;
 }
 
+h1 {
+  font-family: $fontHeading;
+}
 h2 {
   font-family: $fontHeading;
 }
@@ -68,7 +71,7 @@ p {
   align-self: center;
   font-size: 16px;
   border-radius: 7px;
-  background-color: $contrastColorMedium;
+  background-color: $contrastColorLight;
   color: white;
   &:hover {
     cursor: pointer;
@@ -77,11 +80,12 @@ p {
 }
 
 .landing-card {
-  background-color: $contrastColorLight;
+  background-color: $contrastColorMedium;
   display: flex;
   flex-direction: column;
   border-radius: 7px;
-  width: 150px;
+  min-width: 200px;
+  height: auto;
   padding: $standardPadding;
   gap: 30px;
   box-shadow: 7px 7px 15px 2px rgb(148, 147, 147);
@@ -151,41 +155,49 @@ p {
     }
   }
   .demo-content {
-    background-color: white;
+    background-color: $mainColor;
+    height: 500px;
   }
   .team-presentation {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
+  .contact-container {
+  }
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  bottom: 0px;
-  left: 0px;
-  text-align: center;
-  background-color: $mainColor;
-  font-family: $fontBody;
-  background-color: #5a8c8c;
-  .adress {
+footer {
+  margin: 0;
+  position: sticky;
+  .footer-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 100px;
-  }
-  .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 10px;
-  }
-  .head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: $mainColor;
+    font-family: $fontBody;
+    background-color: #5a8c8c;
+    .adress {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
+    }
+    .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      gap: 10px;
+    }
+    .head {
+      display: flex;
+      margin: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }

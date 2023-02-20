@@ -3,6 +3,10 @@ body {
   background-color: #eee5d3;
 }
 
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
 h2 {
   font-family: "Poppins", sans-serif;
 }
@@ -64,7 +68,7 @@ p {
   align-self: center;
   font-size: 16px;
   border-radius: 7px;
-  background-color: #5a8c8c;
+  background-color: #81a69b;
   color: white;
 }
 .card-button:hover, .card-container .card3 button:hover, .card-container .card2 button:hover, .card-container .card1 button:hover {
@@ -73,11 +77,12 @@ p {
 }
 
 .landing-card, .card-container .card3, .card-container .card2, .card-container .card1 {
-  background-color: #81a69b;
+  background-color: #5a8c8c;
   display: flex;
   flex-direction: column;
   border-radius: 7px;
-  width: 150px;
+  min-width: 200px;
+  height: auto;
   padding: 20px;
   gap: 30px;
   box-shadow: 7px 7px 15px 2px rgb(148, 147, 147);
@@ -123,15 +128,19 @@ p {
   height: 300px;
 }
 .main-container .demo-content {
-  background-color: white;
+  background-color: #eee5d3;
+  height: 500px;
 }
 .main-container .team-presentation {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
-.footer-container {
+footer {
+  margin: 0;
+  position: sticky;
+}
+footer .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,33 +149,24 @@ p {
   left: 0px;
   text-align: center;
   background-color: #eee5d3;
-<<<<<<< HEAD
-  font-family: Arial;
+  font-family: "Poppins", sans-serif;
   background-color: #5a8c8c;
 }
-.footer-container .adress {
+footer .footer-container .adress {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 100px;
 }
-.footer-container .icons {
+footer .footer-container .icons {
   display: flex;
   flex-direction: row;
   justify-content: end;
   gap: 10px;
 }
-.footer-container .head {
+footer .footer-container .head {
   display: flex;
+  margin: 0;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.demo-content {
-  background-color: white;
-  width: 500px;
-  height: 300px;
-=======
-  font-family: "Poppins", sans-serif;
->>>>>>> 7b25eb6f4e6dc2bfa6ca5596ca5dea6a14fce673
 }/*# sourceMappingURL=landing.css.map */
