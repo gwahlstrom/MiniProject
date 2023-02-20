@@ -56,6 +56,30 @@ p {
     }
   }
 }
+.menu-slideout_hidden {
+  background-color: $contrastColorDark;
+  width: 350px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -350px;
+  transition: all 1s ease-in-out;
+  .menu_list {
+    color: $mainColor;
+    list-style-type: none;
+    position: relative;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    li {
+      padding:$standardPadding;
+    }
+  }
+}
+.menu-slideout_visible {
+  left: 0px;
+}
+
 
 .landing-img {
   width: 120px;

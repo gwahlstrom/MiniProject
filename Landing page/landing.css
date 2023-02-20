@@ -52,6 +52,31 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+.menu-slideout_hidden {
+  background-color: #3a7d8c;
+  width: 350px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -350px;
+  transition: all 1s ease-in-out;
+}
+.menu-slideout_hidden .menu_list {
+  color: #eee5d3;
+  list-style-type: none;
+  position: relative;
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-slideout_hidden .menu_list li {
+  padding: 20px;
+}
+
+.menu-slideout_visible {
+  left: 0px;
+}
+
 .landing-img, .card-container .card3 img, .card-container .card2 img, .card-container .card1 img {
   width: 120px;
   height: 120px;
