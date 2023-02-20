@@ -2,8 +2,8 @@ $mainColor: #eee5d3;
 $contrastColorMedium: #5a8c8c;
 $contrastColorLight: #81a69b;
 $contrastColorDark: #3a7d8c;
-$fontHeading: Arial;
-$fontBody: Arial;
+$fontHeading: "Poppins", sans-serif;
+$fontBody: "Poppins", sans-serif;
 $standardPadding: 20px;
 
 body {
@@ -15,10 +15,16 @@ h2 {
   font-family: $fontHeading;
 }
 
+h3 {
+  font-family: $fontHeading;
+}
+p {
+  font-family: $fontHeading;
+}
 .header-container {
   background-color: $mainColor;
   display: flex;
-  gap: 10px;
+  gap: 30px;
   width: 100vw;
   height: 80px;
   .menu-icon {
@@ -28,7 +34,10 @@ h2 {
     justify-content: center;
     align-items: center;
     img {
-      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
       &:hover {
         cursor: pointer;
       }
@@ -37,7 +46,7 @@ h2 {
   .logotype {
     display: flex;
     align-items: end;
-    width: 90%;
+    width: 92%;
     h1 {
       margin: 0;
       font-family: $fontHeading;
@@ -46,26 +55,50 @@ h2 {
 }
 
 .landing-img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  align-self: center;
+  object-fit: cover;
 }
+.card-button {
+  border: none;
+  height: 30px;
+  width: 120px;
+  align-self: center;
+  font-size: 16px;
+  border-radius: 7px;
+  background-color: $contrastColorMedium;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    background-color: #487070;
+  }
+}
+
 .landing-card {
-  background-color: white;
+  background-color: $contrastColorLight;
   display: flex;
   flex-direction: column;
+  border-radius: 7px;
+  width: 150px;
   padding: $standardPadding;
-  gap: 20px;
+  gap: 30px;
+  box-shadow: 7px 7px 15px 2px rgb(148, 147, 147);
 }
 .card-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 50px;
   .card1 {
     @extend .landing-card;
     img {
       @extend .landing-img;
+    }
+    button {
+      @extend .card-button;
     }
   }
   .card2 {
@@ -73,12 +106,21 @@ h2 {
     img {
       @extend .landing-img;
     }
+    button {
+      @extend .card-button;
+    }
   }
   .card3 {
     @extend .landing-card;
     img {
       @extend .landing-img;
     }
+    button {
+      @extend .card-button;
+    }
+  }
+  h3 {
+    margin: 0;
   }
 }
 .main-container {
@@ -104,10 +146,17 @@ h2 {
       flex-basis: 400px;
     }
     .headline-animation {
-      background-color: rgb(228, 227, 201);
       width: 300px;
       height: 300px;
     }
+  }
+  .demo-content {
+    background-color: white;
+  }
+  .team-presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -120,10 +169,4 @@ h2 {
   text-align: center;
   background-color: $mainColor;
   font-family: $fontBody;
-}
-
-.demo-content {
-  background-color: white;
-  width: 500px;
-  height: 300px;
 }
