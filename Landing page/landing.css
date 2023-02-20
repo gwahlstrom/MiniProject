@@ -37,10 +37,6 @@ h2 {
   font-family: Arial;
 }
 
-.headline h2 {
-  font-size: 50px;
-}
-
 .landing-img, .card-container .card3 img, .card-container .card2 img, .card-container .card1 img {
   width: 100px;
   height: 100px;
@@ -66,10 +62,29 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  gap: 50px;
+  padding: 70px;
   margin-right: 200px;
   margin-left: 200px;
   min-width: 600px;
+}
+.main-container .headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-container .headline .headline-text {
+  font-size: 50px;
+  font-weight: 600;
+  flex-basis: 400px;
+}
+.main-container .headline .headline-animation {
+  background-color: rgb(228, 227, 201);
+  width: 300px;
+  height: 300px;
 }
 
 .footer-container {
