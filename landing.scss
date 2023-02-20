@@ -1,12 +1,12 @@
-$mainColor: lightgray;
-$contrastColor: beige;
+$mainColor: #eee5d3;
+$contrastColor: #5a8c8c;
 $fontHeading: Arial;
 $fontBody: Arial;
 $standardPadding: 20px;
 
 body {
   margin: 0;
-  background-color: $contrastColor;
+  background-color: $mainColor;
 }
 
 h2 {
@@ -21,12 +21,15 @@ h2 {
   height: 80px;
   .menu-icon {
     background-color: $contrastColor;
-    width: 10%;
+    width: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
-      width: 40%;
+      width: 50%;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .logotype {
