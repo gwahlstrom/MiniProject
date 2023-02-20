@@ -4,13 +4,21 @@ body {
 }
 
 h2 {
-  font-family: Arial;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
 }
 
 .header-container {
   background-color: #eee5d3;
   display: flex;
-  gap: 10px;
+  gap: 30px;
   width: 100vw;
   height: 80px;
 }
@@ -22,7 +30,10 @@ h2 {
   align-items: center;
 }
 .header-container .menu-icon img {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
 }
 .header-container .menu-icon img:hover {
   cursor: pointer;
@@ -30,33 +41,59 @@ h2 {
 .header-container .logotype {
   display: flex;
   align-items: end;
-  width: 90%;
+  width: 92%;
 }
 .header-container .logotype h1 {
   margin: 0;
-  font-family: Arial;
+  font-family: "Poppins", sans-serif;
 }
 
 .landing-img, .card-container .card3 img, .card-container .card2 img, .card-container .card1 img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  align-self: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-button, .card-container .card3 button, .card-container .card2 button, .card-container .card1 button {
+  border: none;
+  height: 30px;
+  width: 120px;
+  align-self: center;
+  font-size: 16px;
+  border-radius: 7px;
+  background-color: #5a8c8c;
+  color: white;
+}
+.card-button:hover, .card-container .card3 button:hover, .card-container .card2 button:hover, .card-container .card1 button:hover {
+  cursor: pointer;
+  background-color: #487070;
 }
 
 .landing-card, .card-container .card3, .card-container .card2, .card-container .card1 {
-  background-color: white;
+  background-color: #81a69b;
   display: flex;
   flex-direction: column;
+  border-radius: 7px;
+  width: 150px;
   padding: 20px;
-  gap: 20px;
+  gap: 30px;
+  box-shadow: 7px 7px 15px 2px rgb(148, 147, 147);
 }
 
 .card-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 50px;
 }
+.card-container h3 {
+  margin: 0;
+}
+
 .main-container {
   background-color: #eee5d3;
   display: flex;
@@ -82,9 +119,16 @@ h2 {
   flex-basis: 400px;
 }
 .main-container .headline .headline-animation {
-  background-color: rgb(228, 227, 201);
   width: 300px;
   height: 300px;
+}
+.main-container .demo-content {
+  background-color: white;
+}
+.main-container .team-presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .footer-container {
@@ -96,6 +140,7 @@ h2 {
   left: 0px;
   text-align: center;
   background-color: #eee5d3;
+<<<<<<< HEAD
   font-family: Arial;
   background-color: #5a8c8c;
 }
@@ -121,4 +166,7 @@ h2 {
   background-color: white;
   width: 500px;
   height: 300px;
+=======
+  font-family: "Poppins", sans-serif;
+>>>>>>> 7b25eb6f4e6dc2bfa6ca5596ca5dea6a14fce673
 }/*# sourceMappingURL=landing.css.map */
