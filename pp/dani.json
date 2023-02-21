@@ -1,8 +1,8 @@
 {
-    "name": "",
-    "age": "",
-    "background": "",
-    "spirit_animal": "",
-    "personal": ""
-
+  "name": "Daniela",
+  "age": "28",
+  "background": "Tech recruiter goes hacker/developer",
+  "spirit_animal": "Sloth",
+  "images": ["./../Images/dani1.jpg"],
+  "favorite_gif": "https://media.giphy.com/media/3s7Jl1xafxWu0qDBoA/giphy.gif"
 }

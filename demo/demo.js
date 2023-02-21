@@ -10,6 +10,11 @@ menu_close.addEventListener("click", function () {
   menu.classList.remove("menu-slideout_visible");
 });
 
+const logoLink = document.querySelector(".logotype");
+logoLink.addEventListener("click", function () {
+  window.location.href = "http://127.0.0.1:5501/Landing%20page/landing.html";
+});
+
 const joke = document.querySelector(".joke");
 const button = document.querySelector("button");
 

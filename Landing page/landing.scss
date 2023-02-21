@@ -8,6 +8,7 @@ $standardPadding: 20px;
 
 body {
   margin: 0;
+  width: 100%;
   background-color: $mainColor;
 }
 
@@ -31,7 +32,7 @@ p {
   height: 80px;
   .menu-icon {
     background-color: $contrastColorMedium;
-    width: 8%;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +49,25 @@ p {
   .logotype {
     display: flex;
     align-items: end;
-    width: 92%;
+    width: auto;
     h1 {
       margin: 0;
       font-family: $fontHeading;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
+}
+input {
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  background-color: #e2d7c2;
+}
+select {
+  @extend input;
+  color: grey;
 }
 .menu-slideout_hidden {
   background-color: $contrastColorDark;
@@ -77,6 +91,30 @@ p {
     }
     li {
       padding: $standardPadding;
+    }
+    #our-team:hover {
+      color: rgb(245, 245, 117);
+      cursor: pointer;
+    }
+    #menu-dani:hover {
+      color: salmon;
+      cursor: pointer;
+    }
+    #menu-gustav:hover {
+      color: rgb(64, 145, 64);
+      cursor: pointer;
+    }
+    #menu-agata:hover {
+      color: rgb(146, 55, 146);
+      cursor: pointer;
+    }
+    #menu-demo:hover {
+      color: rgb(104, 104, 230);
+      cursor: pointer;
+    }
+    #menu-contact:hover {
+      color: rgb(235, 179, 77);
+      cursor: pointer;
     }
   }
   .close-menu {
@@ -126,6 +164,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   text-align: center;
   gap: 50px;
   .card1 {
@@ -159,6 +198,12 @@ p {
     margin: 0;
   }
 }
+.global-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .main-container {
   background-color: $mainColor;
   display: flex;
@@ -166,9 +211,7 @@ p {
   align-items: center;
   gap: 50px;
   padding: 70px;
-  margin-right: 200px;
-  margin-left: 200px;
-  min-width: 600px;
+  max-width: 900px;
   .headline {
     display: flex;
     flex-direction: row;
@@ -188,7 +231,6 @@ p {
   }
   .demo-content {
     background-color: $mainColor;
-    height: 500px;
   }
   .team-presentation {
     display: flex;
@@ -234,5 +276,36 @@ footer {
         align-self: center;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-container {
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 400px;
+    padding: 35px;
+  }
+  .headline {
+    max-width: 400px;
+    justify-content: flex-start;
+  }
+  .team-presentation {
+    max-width: 400px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-card {
+    max-width: 200px;
+  }
+  .demo-content {
+    max-width: 400px;
+  }
+  .contact-container {
+    max-width: 400px;
   }
 }

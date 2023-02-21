@@ -31,7 +31,7 @@ p {
   height: 80px;
   .menu-icon {
     background-color: $contrastColorMedium;
-    width: 8%;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,10 +48,13 @@ p {
   .logotype {
     display: flex;
     align-items: end;
-    width: 92%;
+    width: auto;
     h1 {
       margin: 0;
       font-family: $fontHeading;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }
@@ -77,6 +80,30 @@ p {
     }
     li {
       padding: $standardPadding;
+    }
+    #our-team:hover {
+      color: rgb(245, 245, 117);
+      cursor: pointer;
+    }
+    #menu-dani:hover {
+      color: salmon;
+      cursor: pointer;
+    }
+    #menu-gustav:hover {
+      color: rgb(64, 145, 64);
+      cursor: pointer;
+    }
+    #menu-agata:hover {
+      color: rgb(146, 55, 146);
+      cursor: pointer;
+    }
+    #menu-demo:hover {
+      color: rgb(104, 104, 230);
+      cursor: pointer;
+    }
+    #menu-contact:hover {
+      color: rgb(235, 179, 77);
+      cursor: pointer;
     }
   }
   .close-menu {
@@ -123,10 +150,28 @@ p {
 
 .joke-container {
   width: 500px;
-  height: 300px;
-  background-color: white;
+  height: 200px;
+}
+.code-container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
 }
 
+.card-button {
+  border: none;
+  height: 30px;
+  width: 120px;
+  align-self: center;
+  font-size: 16px;
+  border-radius: 7px;
+  background-color: $contrastColorLight;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    background-color: #487070;
+  }
+}
 footer {
   margin: 0;
   position: sticky;
@@ -171,5 +216,8 @@ footer {
   .headline {
     max-width: 500px;
     gap: 0px;
+  }
+  #codesnippet {
+    width: 300px;
   }
 }
