@@ -1,8 +1,8 @@
 {
-    "name": "",
-    "age": "",
-    "background": "",
-    "spirit_animal": "",
-    "personal": ""
-
+  "name": "Gustav",
+  "age": "29",
+  "background": "Master of Music Production & Shipping Coordinator",
+  "spirit_animal": "Panda",
+  "images": ["./../Images/gustav1.png"],
+  "favorite_gif": "https://media.tenor.com/qg5HSct1iMAAAAAd/per-morberg-its-good.gif"
 }

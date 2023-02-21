@@ -20,14 +20,14 @@
               <img src="./../svg icons/x.svg" alt="Close menu icon" id="close-menu" />
             </div>
             <ul class="menu_list">
-              <li>Our Team</li>
+              <li id="our-team">Our Team</li>
               <ul class="list">
-                <li><a href="">Dani</a></li>
-                <li><a href="">Gustav</a></li>
-                <li><a href="">Agata</a></li>
+                <li><a id="menu-dani" href="">Dani</a></li>
+                <li><a id="menu-gustav" href="">Gustav</a></li>
+                <li><a id="menu-agata" href="">Agata</a></li>
               </ul>
-              <li>Demo</li>
-              <li>Contact us</li>
+              <li id="menu-demo">Demo</li>
+              <li><a id="menu-contact" href="#bottom">Contact us</a></li>
             </ul>
           </div>
         </div>
@@ -38,20 +38,22 @@
       <div class="main-container">
         <div class="headline">
           <div class="headline-text"></div>
-          <h2 class="name">name</h2>
+          <h2 class="name" id="name">name</h2>
           <div class="headline-animation">
-            <img src="./../Images/gustav1.png" alt="Picture of the person" />
+            <img id="img-container" src="" alt="Picture of the person" />
           </div>
         </div>
         <div class="information-container">
-          <p>Age:</p>
-          <span id="age"></span>
-          <p>Background:</p>
-          <span id="background"></span>
-          <p>Spirit-animal:</p>
-          <span id="spirit-animal"></span>
+          <p>Age: <span id="age"></span></p>
+          
+          <p>Background: <span id="background"></span></p>
+          
+          <p>Spirit-animal: <span id="spirit-animal"></span></p>
+          
           <p>Favorite GIF:</p>
-          <span id="favorite-gif"></span>
+          <div class="gif-container">
+          <img src="" id="favorite-gif"></img>
+        </div>
         </div>
         <div class="personal-blob">
           <svg

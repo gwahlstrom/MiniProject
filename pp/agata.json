@@ -1,8 +1,8 @@
 {
-    "name": "Agata",
-    "age": "38",
-    "background": "Master of cognitive & behavioral science, head of education.",
-    "spirit_animal": "Harley Quinn",
-    "personal": ""
-
+  "name": "Agata",
+  "age": "38",
+  "background": "Master of cognitive & behavioral science, head of education.",
+  "spirit_animal": "Harley Quinn",
+  "images": ["./../Images/agata1.png"],
+  "favorite_gif": "https://media.giphy.com/media/l1J9u3TZfpmeDLkD6/giphy.gif"
 }
