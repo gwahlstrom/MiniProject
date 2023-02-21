@@ -207,6 +207,7 @@ footer {
     bottom: 0px;
     left: 0px;
     text-align: center;
+    padding: $standardPadding;
     background-color: $mainColor;
     font-family: $fontBody;
     background-color: #5a8c8c;
@@ -227,6 +228,11 @@ footer {
       margin: 0;
       flex-direction: row;
       justify-content: space-between;
+      a {
+        text-decoration: none;
+        color: black;
+        align-self: center;
+      }
     }
   }
 }
