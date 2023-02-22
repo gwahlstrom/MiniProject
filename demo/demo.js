@@ -1,6 +1,11 @@
 const menu_open = document.querySelector("#open-menu");
 const menu = document.querySelector(".menu-slideout_hidden");
 const menu_close = document.getElementById("close-menu");
+const menuDani = document.getElementById("menu-dani");
+const menuGustav = document.getElementById("menu-gustav");
+const menuAgata = document.getElementById("menu-agata");
+const menuDemo = document.getElementById("menu-demo");
+const menuOurTeam = document.getElementById("our-team");
 
 menu_open.addEventListener("click", function () {
   menu.classList.add("menu-slideout_visible");
@@ -12,7 +17,7 @@ menu_close.addEventListener("click", function () {
 
 const logoLink = document.querySelector(".logotype");
 logoLink.addEventListener("click", function () {
-  window.location.href = "http://127.0.0.1:5501/Landing%20page/landing.html";
+  window.location.href = "/Landing%20page/landing.html";
 });
 
 const joke = document.querySelector(".joke");
@@ -29,3 +34,18 @@ function getjoke() {
 button.onclick = function () {
   getjoke();
 };
+
+menuGustav.addEventListener("click", function () {
+  window.location.href = "/pp/pp.html?name=gustav";
+});
+
+menuDani.addEventListener("click", function () {
+  window.location.href = "/pp/pp.html?name=dani";
+});
+
+menuAgata.addEventListener("click", function () {
+  window.location.href = "/pp/pp.html?name=agata";
+});
+menuDemo.addEventListener("click", function () {
+  window.location.href = "/demo/demo.html";
+});
