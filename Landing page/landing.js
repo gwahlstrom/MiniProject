@@ -12,6 +12,11 @@ const menuDemo = document.getElementById("menu-demo");
 const menuContact = document.getElementById("menu-contact");
 const menuOurTeam = document.getElementById("our-team");
 
+const logoLink = document.querySelector(".logotype");
+logoLink.addEventListener("click", function () {
+  window.location.href = "/Landing%20page/landing.html";
+});
+
 menu_open.addEventListener("click", function () {
   menu.classList.add("menu-slideout_visible");
 });
@@ -21,23 +26,38 @@ menu_close.addEventListener("click", function () {
 });
 
 gustavButton.addEventListener("click", function () {
-  window.location.href = "http://127.0.0.1:5501/pp/pp.html?name=gustav";
+  window.location.href = "/pp/pp.html?name=gustav";
 });
 
 daniButton.addEventListener("click", function () {
-  window.location.href = "http://127.0.0.1:5501/pp/pp.html?name=dani";
+  window.location.href = "/pp/pp.html?name=dani";
 });
 
 agataButton.addEventListener("click", function () {
-  window.location.href = "http://127.0.0.1:5501/pp/pp.html?name=agata";
+  window.location.href = "/pp/pp.html?name=agata";
 });
 
 toJoke.addEventListener("click", function () {
-  window.location.href = "http://127.0.0.1:5501/demo/demo.html";
+  window.location.href = "/demo/demo.html";
 });
 
 menuContact.addEventListener("click", function () {
   menu.classList.remove("menu-slideout_visible");
+});
+
+menuGustav.addEventListener("click", function () {
+  window.location.href = "/pp/pp.html?name=gustav";
+});
+
+menuDani.addEventListener("click", function () {
+  window.location.href = "/pp/pp.html?name=dani";
+});
+
+menuAgata.addEventListener("click", function () {
+  window.location.href = "/pp/pp.html?name=agata";
+});
+menuDemo.addEventListener("click", function () {
+  window.location.href = "/demo/demo.html";
 });
 
 // window.confirm("Do you want a cookie?");
